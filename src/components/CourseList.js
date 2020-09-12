@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component,Fragment } from 'react'
 
 class CourseList extends Component {
     render() {
         return (
-            <div>
-                List
-            </div>
+            <Fragment>
+                <li>
+                    {this.props.details.name}
+                </li>
+            </Fragment>
         )
     }
 }
